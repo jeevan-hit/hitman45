@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareNova | Modern Healthcare</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>✚</span> CareNova
+            </div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#appointment">Appointment</a>
+            </div>
+
+            <a href="#appointment" class="nav-button">
+                Book Now
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                YOUR HEALTH. OUR PRIORITY.
+            </p>
+
+            <h1>
+                Healthcare that
+                <span>cares about you.</span>
+            </h1>
+
+            <p class="hero-description">
+                Connect with trusted healthcare professionals,
+                explore medical services and manage your appointments
+                in one simple place.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#appointment" class="primary-button">
+                    Book an Appointment →
+                </a>
+
+                <a href="#services" class="secondary-button">
+                    Explore Services
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="health-card">
+
+            <div class="doctor-icon">
+                ♥
+            </div>
+
+            <h3>Better Care</h3>
+
+            <p>
+                Professional healthcare designed
+                around your needs.
+            </p>
+
+            <div class="health-stat">
+                <strong>24/7</strong>
+                <span>Care Support</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section id="services" class="section">
+
+        <div class="section-heading">
+            <p>OUR SERVICES</p>
+
+            <h2>
+                Healthcare made simple
+            </h2>
+
+            <span>
+                Everything you need for better healthcare.
+            </span>
+        </div>
+
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <div class="service-icon">🩺</div>
+
+                <h3>General Consultation</h3>
+
+                <p>
+                    Get professional medical guidance
+                    from experienced doctors.
+                </p>
+
+                <a href="#appointment">Learn more →</a>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-icon">❤️</div>
+
+                <h3>Cardiology</h3>
+
+                <p>
+                    Comprehensive care for your heart
+                    and cardiovascular health.
+                </p>
+
+                <a href="#appointment">Learn more →</a>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-icon">🧠</div>
+
+                <h3>Neurology</h3>
+
+                <p>
+                    Specialized consultation for brain
+                    and nervous system conditions.
+                </p>
+
+                <a href="#appointment">Learn more →</a>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-icon">👨‍⚕️</div>
+
+                <h3>Specialist Care</h3>
+
+                <p>
+                    Connect with specialists across
+                    different healthcare fields.
+                </p>
+
+                <a href="#appointment">Learn more →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Doctors -->
+    <section id="doctors" class="doctors-section">
+
+        <div class="section-heading">
+            <p>OUR DOCTORS</p>
+
+            <h2>
+                Meet our specialists
+            </h2>
+
+            <span>
+                Experienced professionals dedicated to your care.
+            </span>
+        </div>
+
+
+        <div class="doctor-grid">
+
+            <div class="doctor-card">
+
+                <div class="doctor-avatar">
+                    👩‍⚕️
+                </div>
+
+                <h3>Dr. Ananya Sharma</h3>
+
+                <p>Cardiologist</p>
+
+                <span>12+ years experience</span>
+
+            </div>
+
+
+            <div class="doctor-card">
+
+                <div class="doctor-avatar">
+                    👨‍⚕️
+                </div>
+
+                <h3>Dr. Arjun Kumar</h3>
+
+                <p>General Physician</p>
+
+                <span>10+ years experience</span>
+
+            </div>
+
+
+            <div class="doctor-card">
+
+                <div class="doctor-avatar">
+                    👩‍⚕️
+                </div>
+
+                <h3>Dr. Meera Iyer</h3>
+
+                <p>Neurologist</p>
+
+                <span>15+ years experience</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Appointment -->
+    <section id="appointment" class="appointment-section">
+
+        <div class="appointment-info">
+
+            <p>BOOK YOUR VISIT</p>
+
+            <h2>
+                Take the first step
+                towards better health.
+            </h2>
+
+            <span>
+                Fill out the form and our team will
+                help you schedule your appointment.
+            </span>
+
+        </div>
+
+
+        <form id="appointmentForm" class="appointment-form">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+            <select id="department" required>
+
+                <option value="">
+                    Select Department
+                </option>
+
+                <option value="General Medicine">
+                    General Medicine
+                </option>
+
+                <option value="Cardiology">
+                    Cardiology
+                </option>
+
+                <option value="Neurology">
+                    Neurology
+                </option>
+
+            </select>
+
+            <button type="submit">
+                Request Appointment
+            </button>
+
+            <p id="message"></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="logo">
+            <span>✚</span> CareNova
+        </div>
+
+        <p>
+            Modern healthcare, designed around you.
+        </p>
+
+        <small>
+            © 2026 CareNova. All rights reserved.
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
