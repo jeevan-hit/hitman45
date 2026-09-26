@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 42% 6%;
+    --foreground: 210 20% 98%;
+    --card: 221 39% 11%;
+    --card-foreground: 210 20% 98%;
+    --popover: 221 39% 11%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 186 100% 50%;
+    --primary-foreground: 222 42% 6%;
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 218 11% 65%;
+    --accent: 215 28% 17%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 186 100% 50%;
+    --chart-1: 186 100% 50%;
+    --chart-2: 217 91% 60%;
+    --chart-3: 160 84% 39%;
+    --chart-4: 38 92% 50%;
+    --chart-5: 0 84% 60%;
+    --radius: 0.75rem;
+    --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'JetBrains Mono', ui-monospace, monospace;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@layer components {
+  .label-xs {
+    @apply text-[0.75rem] uppercase tracking-[0.12em] text-[#9CA3AF] font-medium;
+  }
+  .num {
+    @apply font-mono tabular-nums;
+  }
+}
+
+.recharts-wrapper *:focus { outline: none; }
